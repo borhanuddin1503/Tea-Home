@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea-House</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea-House</title>
 
-    <!-- tailwind css instalization -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <!-- tailwind css instalization -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- font-awesome instalaization -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- font-awesome instalaization -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- font instalization -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font instalization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    <!-- customize tailwind -->
-    <style type="text/tailwindcss">
-        @theme {
-          --color-clifford: #da373d;
-        }
-    </style>
+  <!-- font style -->
+   <style>
+      .manrove{
+        font-family: "Manrope", serif;
+      }
+   </style>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline text-clifford">
-        Hello world!
-      </h1>
+
+<body class="manrove">
+  <main class="max-w-screen-xl px-16 mx-auto ">
+    <header class="flex pt-16">
+      <!-- banner text content -->
+        <div class="">
+          <h1 class="text-[80px] font-extrabold m-0 mb-7">It's good <br>tea time at The <br> Tea House</h1>
+
+          <p class="w-3/4 mb-7 leading-8 text-[18px] font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+
+
+          <button class="py-[18px] px-5 bg-gradient-to-r from-[#FF8938] from-30% to-[#FF0000] rounded-[10px] text-xl text-white font-bold">Explore More <i class="fa-solid fa-arrow-right -rotate-45 ml-[10px]"></i></button>
+        </div>
+      
+        <!-- banner image -->
+         <div class="relative">
+            <img src="images/banner.png" alt="" class="w-full ">
+
+
+            <!-- banner card -->
+            <div class="flex items-center shadow-lg px-7 py-5 absolute bottom-16 left-10 rounded-[10px] bg-white ">
+              <div><i class="fa-solid fa-star text-4xl text-[#FFC850] mr-3"></i></div>
+              
+              <div class="text-[#C1C1C]">
+                 <h2 class="text-[30px] font-extrabold">5.00</h2>
+                 <p class="font-semibold">Trust Pilot Ratings</p>
+              </div>
+            </div>
+         </div>
+    </header>
+  </main>
 </body>
+
 </html>
